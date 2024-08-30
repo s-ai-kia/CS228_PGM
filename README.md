@@ -1,19 +1,45 @@
-![Hits](https://hitcounter.pythonanywhere.com/count/tag.svg?url=https%3A%2F%2Fgithub.com%2FSKKSaikia%2FCS228_PGM)
 
-# [CS:228 - Probabilistic Graphical Models](https://cs.stanford.edu/~ermon/cs228/index.html)
+# [🌲 CS:228 - Probabilistic Graphical Models](https://cs.stanford.edu/~ermon/cs228/index.html)
 
-PGM ! PGM ! PGM ! One of the most interesting class yet challenging at Stanford is CS228. Graphical Models ahoi!, There's also an online preview of the course, [here](http://scpd.stanford.edu/search/publicCourseSearchDetails.do?method=load&courseId=11761) or [here](https://mvideos.stanford.edu/Previews) , only  the overview lecture though. The course heavily follows Daphne Koller's book [Probabilistic Graphical Models: Principles and Techniques by Daphne Koller and Nir Friedman.](http://pgm.stanford.edu/), and There's also an online version of "Probabilistic Graphical Models" on [Coursera](https://www.coursera.org/specializations/probabilistic-graphical-models). I [completed](https://www.coursera.org/account/accomplishments/specialization/R63SHPRXHBC8) the [online](https://github.com/liang456/Stanford-Probabilistic-Graphical-Models-Coursera) [version](https://github.com/kuo000/stanford-pgm) as a freshman, and here I take CS228 again. I got [enrolled](https://github.com/SKKSaikia/CS228_PGM/blob/master/gradescope.PNG) on Gradescope, though I am not taking the course in person. Maintain the honor code, keep learning. This is exciting!
+Probabilistic Graphical Models (PGMs) are a rich framework for encoding probability distributions over complex domains, using a graph-based representation. The core idea behind PGMs is to use graphs to capture the conditional dependence structure between random variables, thereby facilitating efficient computation of probabilities and other statistical measures. PGMs combine principles from graph theory, probability theory, and statistics. 
 
-<img src="https://github.com/SKKSaikia/CS228_PGM/blob/master/cs228.PNG">
+PGM ! PGM ! PGM ! One of the most interesting class yet challenging at Stanford is CS228. Graphical Models ahoi! [[ official website ](https://ermongroup.github.io/cs228/)] [[ course notes ](https://ermongroup.github.io/cs228-notes/)]
 
-<p align="justify"> Probabilistic graphical models are a powerful framework for representing complex domains using probability distributions, with numerous applications in machine learning, computer vision, natural language processing and computational biology. Graphical models bring together graph theory and probability theory, and provide a flexible framework for modeling large collections of random variables with complex interactions. This course will provide a comprehensive survey of the topic, introducing the key formalisms and main techniques used to construct them, make predictions, and support decision-making under uncertainty.</p>
+The course heavily follows Daphne Koller's book [Probabilistic Graphical Models: Principles and Techniques by Daphne Koller and Nir Friedman.](http://mcb111.org/w06/KollerFriedman.pdf), and there's also an online version of "Probabilistic Graphical Models" on [Coursera](https://www.coursera.org/specializations/probabilistic-graphical-models) : [cert](https://www.coursera.org/account/accomplishments/specialization/R63SHPRXHBC8).
+
+<img src="./cs228.PNG">
+
+ Imagine you're trying to figure out how various factors like weather, traffic, and your mood affect whether you'll have a good day or not. PGMs help us draw a picture of these connections and then use that picture to make predictions or understand things better.
+
+Types of Probabilistic Graphical Models
+There are two primary types of PGMs:
+
+#### Bayesian Networks (Directed Graphical Models):
+
++ `Structure`: Directed Acyclic Graph (DAG).
++ `Nodes`: Represent random variables.
++ `Edges`: Represent conditional dependencies between the variables.
++ `Representation`: Each node is associated with a conditional probability distribution (CPD) that specifies the probability of the node given its parents in the graph.
++ `Imagine a flowchart`: The circles (nodes) are connected by arrows (edges), showing how one thing leads to another.
++ `Example`: Let’s say you're planning your day. "Weather" might influence "Mood," and "Mood" might influence "Productivity." The arrows would go from "Weather" to "Mood" and from "Mood" to "Productivity." This setup helps us figure out, for instance, how the weather might indirectly affect your productivity.
+
+#### Markov Networks (Undirected Graphical Models):
+
++ `Structure`: Undirected Graph.
++ `Nodes`: Represent random variables.
++ `Edges`: Represent potential functions that quantify the affinity between connected nodes.
++ `Representation`: The joint distribution is represented as a product of potential functions, each defined over a clique (fully connected subgraph) of the graph.
++ `Imagine a web`: The circles (nodes) are connected by lines (edges) without arrows, meaning things are connected but don’t necessarily cause each other.
++ `Example`: Think about pixels in a black-and-white photo. Each pixel’s color is likely to be similar to the ones next to it, but not necessarily because one causes the other to be that color—just that they tend to be similar. This setup helps in tasks like smoothing an image, where you want nearby pixels to have similar values.
+
+<img src="./pgm_.jpg" width=100%>
 
 The aim of this course is to develop the knowledge and skills necessary to design, implement and apply these models to solve real problems. The course will cover: 
 - (1) Bayesian networks, undirected graphical models and their temporal extensions
 - (2) exact and approximate inference methods
 - (3) estimation of the parameters and the structure of graphical models.
 
-BOOK : [Probabilistic Graphical Models: Principles and Techniques by Daphne Koller and Nir Friedman.](http://pgm.stanford.edu/)
+BOOK : [Probabilistic Graphical Models: Principles and Techniques by Daphne Koller and Nir Friedman.](http://mcb111.org/w06/KollerFriedman.pdf)
 
 𓄆 <b>Important Books : </b><br/>
 𓊖 [Modeling and Reasoning with Bayesian](https://www.cambridge.org/core/books/modeling-and-reasoning-with-bayesian-networks/8A3769B81540EA93B525C4C2700C9DE6) <br/>
@@ -72,3 +98,5 @@ BOOK : [Probabilistic Graphical Models: Principles and Techniques by Daphne Koll
 # FINAL EXAM
 
 [2016 Final](https://github.com/SKKSaikia/CS228_PGM/blob/master/exam/final16_with_sols.pdf) , [2009 Final](https://github.com/SKKSaikia/CS228_PGM/blob/master/exam/CS228%20WINTER%202009%20FINAL%20SOLUTION%20(1)%20Using%20...%20-%20Stanford%20AI%20Lab.pdf) , [2008 Final](https://github.com/SKKSaikia/CS228_PGM/blob/master/exam/final-08.pdf) , [2007 Final](https://github.com/SKKSaikia/CS228_PGM/blob/master/exam/final040407.pdf), [2006 Final](https://github.com/SKKSaikia/CS228_PGM/blob/master/exam/final-06.pdf) | Collected from public resources | My Solution - [HOMEWORKS](https://github.com/SKKSaikia/CS228_PGM/blob/master/hw/SOLUTION.MD) , [EXAMS](https://github.com/SKKSaikia/CS228_PGM/blob/master/exam/SOLUTION.MD) | Collected from public resources
+
+Resources: [cs.ubc.ca](https://www.cs.ubc.ca/~murphyk/Bayes/bnintro.html), [10-708 – Probabilistic Graphical Models](https://www.cs.cmu.edu/~epxing/Class/10708-20/index.html) : [cmu](https://www.youtube.com/watch?v=oqvdH_8lmCA&list=PLoZgVqqHOumTqxIhcdcpOAJOOimrRCGZn), [notebook - Introduction to Probabilitic Graphical Models](https://pgmpy.org/detailed_notebooks/1.%20Introduction%20to%20Probabilistic%20Graphical%20Models.html), [Max Planck Institute](https://www.youtube.com/watch?v=ju1Grt2hdko&list=PLL0GjJzXhAWTRiW_ynFswMaiLSa0hjCZ3), [Stanford CS224W: Machine Learning with Graphs](https://www.youtube.com/watch?v=JAB_plj2rbA&list=PLoROMvodv4rPLKxIpqhjhPgdQy7imNkDn).
